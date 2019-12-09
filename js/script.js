@@ -86,6 +86,11 @@ function Calculadora(document, validation) {
   state.display = document.querySelector("#display>input");
 
   digitar = ({ keyPressed }) => {
+    console.log(keyPressed);
+
+    //Caso digitar virgula display entende ponto
+    if (keyPressed == ",") keyPressed = ".";
+
     //Caso o primeiro digito for um operador
     if (state.expressao.length === 0 && !validation.isNumber(keyPressed)) {
       console.log("Primeiro item deve ser um numero");
