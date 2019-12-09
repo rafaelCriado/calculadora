@@ -5,6 +5,21 @@ const btLimpar = document.getElementById("btLimpar");
 const btReset = document.getElementById("btReset");
 const inputExpressao = document.getElementById("expressao");
 
+class Calculadora {
+  display = "";
+  numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  operadores = ["+", "-", "*", "/", "="];
+
+  digitar = valor => {
+    this.display = `${this.display}${valor}`;
+  };
+
+  resultado = () => {
+    this.display = eval(this.display);
+  };
+}
+
+const calc = new Calculadora();
 //Alimenta input
 const digitar = function(valorBotao) {
   let textoExpressao = inputExpressao.value;

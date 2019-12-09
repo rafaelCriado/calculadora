@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=0  , initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta sec-fetch-mode="no-cors" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <input type="text" name="" id="expressao" />
-    <br />
-    <button id="bt">1</button>
-    <button id="bt">2</button>
-    <button id="bt">3</button>
-    <br />
-    <button id="bt">4</button>
-    <button id="bt">5</button>
-    <button id="bt">6</button>
-    <br />
-    <button id="bt">7</button>
-    <button id="bt">8</button>
-    <button id="bt">9</button>
-    <br />
-    <button id="bt">0</button>
-    <button id="btSoma">+</button>
-    <button id="btIgual">=</button>
-    <br />
+    <div id="main">
+      <div id="display">
+        <input type="text" disabled />
+      </div>
+      <div id="keyboard">
+        <div id="numbers">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>0</button>
+          <button>.</button>
+          <button>=</button>
+        </div>
+        <div id="operators">
+          <button>C</button>
+          <button>/</button>
+          <button>*</button>
+          <button>-</button>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
 
-    <button id="btLimpar">C</button>
-    <button id="btReset">R</button>
-
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
